@@ -11,7 +11,7 @@ const Hero = () => {
 
         <div className="grid min-h-105 items-center lg:grid-cols-[1.25fr_0.75fr]">
 
-          {/* Text */}
+          
           <div className="relative z-10 px-6 py-12 sm:px-10 lg:px-12">
 
             <p className="mb-5 text-[10px] font-bold uppercase tracking-wider text-[#C2F800]">
@@ -39,7 +39,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Image */}
+          
           <div className="relative h-65 sm:h-80 lg:h-full lg:min-h-105">
             <Image
               src={banner}

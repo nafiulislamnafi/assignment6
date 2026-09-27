@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="border-b border-[#181A20] bg-[#0C0D10]">
       <div className="mx-auto flex min-h-19 max-w-313.25 flex-wrap items-center justify-between gap-x-4 px-4 sm:px-6">
 
-        {/* Logo */}
+       
         <Link
           href="/"
           className="flex shrink-0 items-center gap-2.5"
@@ -41,7 +41,6 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Navigation */}
         <div className="order-3 flex w-full items-center justify-center gap-1 pb-3 sm:order-0 sm:w-auto sm:pb-0 md:gap-2">
 
           <Link
@@ -67,7 +66,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Counters */}
         <div className="flex shrink-0 items-center gap-3 sm:gap-6">
 
           <Link
