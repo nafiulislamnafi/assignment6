@@ -58,7 +58,6 @@ const PlanCard = ({
       }`}
     >
 
-      {/* Thumbnail */}
       <div className="relative h-28 w-full shrink-0 overflow-hidden rounded-lg sm:h-20 sm:w-32">
         <Image
           src={workout.image}
@@ -69,7 +68,7 @@ const PlanCard = ({
         />
       </div>
 
-      {/* Information */}
+     
       <div className="min-w-0 flex-1">
 
         <h3
@@ -106,7 +105,7 @@ const PlanCard = ({
         </div>
       </div>
 
-      {/* Actions */}
+    
       <div className="flex flex-wrap items-center gap-2 sm:justify-end">
 
         <Link
