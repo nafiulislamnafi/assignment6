@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Clock3,
-  Flame,
-  Star,
-} from "lucide-react";
+import { Clock3, Flame, Star } from "lucide-react";
 
 import type { Workout } from "../types/workout";
 
@@ -12,16 +8,12 @@ interface WorkoutCardProps {
   workout: Workout;
 }
 
-const WorkoutCard = ({
-  workout,
-}: WorkoutCardProps) => {
+const WorkoutCard = ({ workout }: WorkoutCardProps) => {
   return (
     <Link
       href={`/workouts/${workout.id}`}
       className="group block overflow-hidden rounded-lg border border-[#252832] bg-[#15171D] transition duration-200 hover:-translate-y-1 hover:border-[#3A3F49]"
     >
-
-      {/* Image */}
       <div className="relative aspect-video overflow-hidden">
         <Image
           src={workout.image}
@@ -32,10 +24,7 @@ const WorkoutCard = ({
         />
       </div>
 
-      {/* Content */}
       <div className="p-3">
-
-        {/* Tags */}
         <div className="mb-2 flex flex-wrap gap-1.5">
           {workout.muscleGroups.map((group) => (
             <span
@@ -47,19 +36,14 @@ const WorkoutCard = ({
           ))}
         </div>
 
-        {/* Name */}
         <h2 className="truncate text-[12px] font-bold uppercase text-white sm:text-[13px]">
           {workout.name}
         </h2>
 
-        {/* Equipment */}
         <p className="mt-1 truncate text-[10px] text-[#92949B]">
           {workout.equipment}
         </p>
-
-        {/* Stats */}
         <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-[#252832] pt-3 text-[9px] text-[#92949B]">
-
           <span className="flex items-center gap-1">
             <Clock3 size={11} />
             {workout.duration} min
@@ -74,7 +58,6 @@ const WorkoutCard = ({
             <Star size={11} />
             {workout.rating}
           </span>
-
         </div>
       </div>
     </Link>
