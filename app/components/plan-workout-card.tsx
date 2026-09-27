@@ -62,7 +62,6 @@ const PlanWorkoutCard = ({
       }`}
     >
 
-      {/* Image */}
       <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-lg sm:h-16 sm:w-28">
         <Image
           src={workout.image}
@@ -73,7 +72,7 @@ const PlanWorkoutCard = ({
         />
       </div>
 
-      {/* Content */}
+    
       <div className="min-w-0 flex-1">
 
         <h3 className="truncate text-sm font-bold uppercase text-white">
@@ -105,7 +104,7 @@ const PlanWorkoutCard = ({
 
       </div>
 
-      {/* Actions */}
+    
       <div className="flex flex-wrap items-center gap-2">
 
         <Link
