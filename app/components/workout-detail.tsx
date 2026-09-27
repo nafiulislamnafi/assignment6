@@ -18,7 +18,7 @@ const WorkoutDetail = ({
 
       <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
 
-        {/* LEFT IMAGE */}
+        
         <div className="relative aspect-square overflow-hidden rounded-xl border border-[#252832] bg-[#15171D] lg:sticky lg:top-6 lg:h-fit">
           <Image
             src={workout.image}
@@ -30,7 +30,6 @@ const WorkoutDetail = ({
           />
         </div>
 
-        {/* RIGHT SIDE */}
         <div>
 
           <h1 className="text-3xl font-black uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -41,7 +40,6 @@ const WorkoutDetail = ({
             {workout.description}
           </p>
 
-          {/* Muscle groups */}
           <div className="mt-5 flex flex-wrap gap-2">
             {workout.muscleGroups.map((group) => (
               <span
@@ -53,7 +51,6 @@ const WorkoutDetail = ({
             ))}
           </div>
 
-          {/* Specs */}
           <div className="mt-7 overflow-hidden rounded-xl border border-[#252832] bg-[#15171D]">
 
             <SpecRow
@@ -102,7 +99,6 @@ const WorkoutDetail = ({
 
           </div>
 
-          {/* Instructions */}
           <div className="mt-7">
 
             <h2 className="text-xs font-bold uppercase tracking-wide text-white">
@@ -130,7 +126,7 @@ const WorkoutDetail = ({
 
           </div>
 
-          {/* Actions */}
+       
           <div className="mt-7">
             <WorkoutActions workout={workout} />
           </div>
