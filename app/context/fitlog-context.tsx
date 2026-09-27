@@ -122,6 +122,7 @@ export const FitlogProvider = ({
     );
   };
 
+ 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const saveWorkout = (workout: Workout) => {
     if (saved.some((item) => item.id === workout.id)) {
